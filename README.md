@@ -1,6 +1,6 @@
 # KISIA 교육
 
-## AI를 활용한 disassemble code 해석 하
+## AI를 활용한 disassemble code 해석 하기
 ```code
 CODE:00401000                 public start
 CODE:00401000 start           proc near
