@@ -1,7 +1,7 @@
 # KISIA 교육
 
 ## AI를 활용한 disassemble code 해석 하기
-```code
+```ASM
 CODE:00401000                 public start
 CODE:00401000 start           proc near
 CODE:00401000                 push    0               ; uType
@@ -35,4 +35,28 @@ CODE:0040103F                 push    offset aYeah    ; "YEAH!"
 CODE:00401044                 push    offset aOkIReallyThink ; "Ok, I really think that your HD is a CD"...
 CODE:00401049                 push    0               ; hWnd
 CODE:0040104B                 call    MessageBoxA
+```
+
+## AI를 활용한 취약점 분석
+```c++
+#include <stdio.h> 
+#include <string.h>
+
+void secret_function() {
+    printf("\n[+] Secret function called! This should not be executed normally.\n");
+}
+
+void get_username() {
+    char buffer[16]; 
+    printf("Enter your name: ");
+    gets(buffer); 
+    printf("Hello, %s!\n", buffer);
+}
+
+int main() {
+    get_username(); 
+
+    printf("\n[+] Program finished normally.\n");
+    return 0;
+}
 ```
