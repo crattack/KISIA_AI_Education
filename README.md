@@ -60,3 +60,12 @@ int main() {
     return 0;
 }
 ```
+
+## yara library install
+```sh
+$ python3 -m venv yara_env
+$ source ~/yara_env/bin/activate
+(yara_env) $ pip3 install yara-python
+(yara_env) $ deactivate
+$
+```
